@@ -59,7 +59,7 @@ export default function Home() {
         }
       </section>
       <section className="m-8">
-        <p className="text-xs text-left">Soon, a.k.a. Kevin, specializes in backend development with Java and Pytho and frontend development using JavaScript and TypeScript. He developed a configuration management pipeline at Amazon, which is extensively utilized by the Amazon Alexa Music team.</p>
+        <p className="text-xs text-left">Soon, a.k.a. Kevin, specializes in backend development with Java and Python and frontend development using JavaScript and TypeScript. He developed a configuration management pipeline at Amazon, which is extensively utilized by the Amazon Alexa Music team.</p>
       </section>
       <section class="text-sm p-1">
         <h2 className="mt-6 mb-6 font-semibold">Select Builds</h2>
