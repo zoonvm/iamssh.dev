@@ -7,20 +7,6 @@ import useUser from "lib/useUser";
 import fetchJson from 'lib/fetchJson';
 
 const name = 'Soon H'
-const socialNetworks = [
-  {
-    name: "linkedin", 
-    link: "https://www.linkedin.com/in/kevinsoonhong/"
-  },
-  {
-    name: "instagram",
-    link: "https://www.instagram.com/kaebong/"
-  },
-  {
-    name: "github",
-    link: "https://github.com/zoonvm"
-  }
-];
 
 export const siteTitle = 'Soon H'
 
@@ -40,7 +26,7 @@ export default function Layout({ children, home }) {
     }
 
     return (
-      <div className="max-w-lg mt-16 mx-auto">
+      <div className="max-w-xl mt-16 mx-auto">
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta name="og:title" content={siteTitle} />
@@ -71,26 +57,13 @@ export default function Layout({ children, home }) {
           }
           {home ? (
             <>
-              <div class="flex flex-row h-96 w-50 overflow-x-scroll"> 
+              <div class="flex flex-row h-40 w-50 overflow-x-scroll"> 
                 <img src={"images/nyc-me.jpeg"}/>
                 <img src={"/images/military.JPG"}/>
                 <img src={"/images/hollywood-me.jpeg"}/>
                 <img src={"/images/me.png"}/> 
               </div>
-              <div className="flex justify-center align-middle cursor-pointer mt-3">
-                {socialNetworks.map(({ name, link }, idx) => (
-                  <div className="mx-2.5" key={idx}>
-                    <Link href={link}>
-                      <Image 
-                        src={`/images/${name}.png`}
-                        width={30}
-                        height={30}
-                      />
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </>
+           </>
           ) : (
             <>
               <h2 className="text-2xl">
@@ -101,7 +74,7 @@ export default function Layout({ children, home }) {
             </>
           )}
         </header>
-        <main>{children}</main>
+        <main className="m-4">{children}</main>
         {!home && (
           <div className="mt-3">
             <Link legacyBehavior href="/">
