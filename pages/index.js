@@ -66,7 +66,7 @@ export default function Home() {
         <ul class="list space-y-2">
           <li class="text-xs">
             <a target="_blank" rel="noopener noreferrer" class="cursur-pointer hover:text-gray-500/100" href="https://layoverhr.vercel.app/">
-              layover - automate hiring and job application process
+              layover - automate hiring and job application process (in progress)
             </a>
             <br />
           </li>
